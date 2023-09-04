@@ -1,84 +1,95 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@InProceedings{ijcai23,
+  author	= {Jinchun Du and Bojie Shen and Shizhe Zhao and Muhammad Aamir Cheema and Adel N. Toosi},
+  title		= {Efficient Object Search in Game Maps},
+  booktitle	= {Proceedings of International Joint
+		  Conference on Artificial Intelligence, {IJCAI}},
+  publisher	= {},
+  url = {https://www.ijcai.org/proceedings/2023/0618.pdf},
+  year		= {2023}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@InProceedings{socs23,
+  author	= {Shizhe Zhao and Daniel Harabor and Peter J. Stuckey},
+  title		= {Reducing Redundant Work in Jump Point Search},
+  booktitle	= {Proceedings of the 16th International Symposium on Combinatorial Search, {SOCS} 2023},
+  publisher	= {{AAAI} Press},
+  url = {https://ojs.aaai.org/index.php/SOCS/article/download/27291/27064},
+  selected = {true},
+  year		= {2023},
+  abstract = {Despite the existence of various fast preprocessing-based approaches for single-agent pathfinding on gridmaps, online approaches are still preferable in dynamic environments where obstacles may appear or disappear on the map between different queries.<br>
+Jump Point Search (JPS) is a state-of-the-art algorithm for online pathfinding on grids. It utilises a local pruning policy and a successor generation policy to accelerate A* search by two orders of magnitude. However, JPS may exhibit pathological behaviors and become inefficient in certain map topologies that are common in dynamic environments.<br>
+In this work, we investigate the root cause of JPS's pathological behaviors and propose a new reasoning technique based on geometric constraints to address these issues on-the-fly. The new approach, called Constrained JPS, can achieve up to a 7x speedup, and this improvement can be up to 14x in pathological setups. An interesting direction for future research is to apply Constrained JPS to high-dimensional grid-based pathfinding problems. For example, in drone navigation problems, environments are sometimes modeled as 3D voxel gridmaps. JPS encounters similar pathological behaviors in this type of environment. In multi-agent pathfinding problems, a low-level single-agent planner needs to handle temporal obstacles, where obstacles can move, and the environment changes during the query.
+    }
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@inproceedings{DBLP:conf/socs/ZhaoTH18,
+  author        = {Shizhe Zhao and David Taniar and Daniel Damir Harabor},
+  editor        = {Vadim Bulitko and Sabine Storandt},
+  title         = {Fast k-Nearest Neighbor on a Navigation Mesh},
+  booktitle     = {Proceedings of the Eleventh International Symposium on Combinatorial Search, {SOCS} 2018, Stockholm, Sweden - 14-15 July 2018},
+  pages         = {124--132},
+  publisher     = {{AAAI} Press},
+  year          = {2018},
+  url           = {https://aaai.org/ocs/index.php/SOCS/SOCS18/paper/view/17973},
+  timestamp     = {Tue, 24 Jul 2018 20:17:24 +0200},
+  biburl        = {https://dblp.org/rec/bib/conf/socs/ZhaoTH18},
+  selected = {true},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  abstract = {This work focuses on studying the k-nearest neighbor problem in a 2D Euclidean plane with obstacles (OkNN). An efficient OkNN algorithm can serve as a low-level solver to provide spatial information for a high-level task planner. For example, in an industrial warehouse setting, a robot may need to determine the k-closest storage locations where a specific inventory item can be found. A naive approach to solve this problem is to employ a single-source pathfinding algorithm to compute the shortest distance to all objects. However, with an increasing number of objects and the size of the map, two main challenges arise:<br>
+              (1) Pruning unpromising candidates during the query processing;<br>
+              (2) Efficiently computing the distance to multiple objects, especially when k is large.<br>
+Traditional approaches rely on an incremental visibility graph, but they suffer from costly graph building and visibility checking. In this work, we developed a new algorithm that addresses the aforementioned challenges by representing the traversable space as a collection of convex polygons, known as a Navigation Mesh. We then adapted an <a href="https://www.ijcai.org/Proceedings/2017/0070.pdf" style="font-weight: bolder;">optimal navigation mesh algorithm </a> from the single-source single-target setting to the multi-target case. The new algorithm demonstrates orders of magnitude faster performance compared to visibility graph-based algorithms.<br>
+In a <a href="https://www.ijcai.org/proceedings/2023/0618.pdf" style="font-weight: bolder;">subsequent study</a>, we further considered moving objects and extended our method to more complex application scenarios, e.g., autonomous sea-cleaning robots.
+  }
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{icaps19b,
+  author        = {Mattia Chiari and Shizhe Zhao and Adi Botea and Alfonso Gerevini and Daniel Harabor and Alessandro Saetti and Matteo Salvetti and Peter J. Stuckey},
+  title         = {Cutting the Size of Compressed Path Databases With Wildcards and Redundant Symbols},
+  optcrossref   = {},
+  optkey        = {},
+  booktitle     = {Proceedings of the 29th International Conference on Automated Planning and Scheduling},
+  year          = {2019},
+  editor        = {Nir Lipovetzky and Eva Onaindia and David Smith},
+  optvolume     = {},
+  optnumber     = {},
+  optseries     = {},
+  pages         = {106--113},
+  optmonth      = {},
+  optaddress    = {},
+  optorganization = {},
+  publisher     = {AAAI Press},
+  optnote       = {},
+  url = {https://ojs.aaai.org/index.php/ICAPS/article/download/3465/3333},
+  selected = {true},
+  optannote     = {},
+  abstract = {Single agent path planning on gridmaps is a long studied problem in robotics and computer games. In certain application scenarios, it is critical to reduce first-move lag,
+    i.e., an agent needs to wait until it knows in which direction to move. Compressed Path Databases (CPDs) are a state-of-the-art approach (in terms of speed) for optimal pathfinding on gridmaps. Each CPD is simply a data structure that provides an optimal first move: from any cell s towards any cell t of the gridmap. Created during an offline preprocessing step, and exploited during a subsequent online phase, CPDs can be used to compute shortest paths or optimal first move quickly. A major drawback of CPDs is the potentially large size of the preprocessed data. In this work, we introduced an additional reasoning step in the first-move extraction process, which enabled us to further compress and prune the preprocessed data. Results show significant reductions in CPD size. For instance, on a map with 200k nodes, an uncompressed first move matrix requires 50GB, the previous work requires 500MB, while our approach only requires 9MB. Such size reduction allows us to deploy CPDs on edge devices (e.g., robots) instead of relying on a centralised planner. In subsequent studies, we enabled a <a href="https://ojs.aaai.org/index.php/ICAPS/article/download/6678/6532/" style="font-weight: bolder;">trade-off between size and optimality</a> and extended the application scenario to <a href="https://ojs.aaai.org/index.php/SOCS/article/download/18554/18343" style="font-weight: bolder;">road networks with dynamic traffic</a>.
+      }
+}
+@inproceedings{icaps2020,
+  author        = {Shizhe Zhao and Mattia Chiari and Adi Botea and Alfonso Gerevini and Daniel Harabor and Alessandro Saetti and Peter J. Stuckey},
+  title         = {Bounded Suboptimal Path Planning with Compressed Path Databases},
+  booktitle     = {Proceedings of the 30th International Conference on Automated Planning and Scheduling},
+  year          = {2020},
+  editor        = {Nir Lipovetzky and Eva Onaindia and David Smith},
+  url = {https://ojs.aaai.org/index.php/ICAPS/article/download/6678/6532/},
+  publisher     = {AAAI Press}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{DBLP:conf/socs/ZhaoTH21,
+  author        = {Arthur Maheo and Shizhe Zhao and Afzaal Hassan and Daniel Damir Harabor and Peter Stuckey and Mark Wallace},
+  editor        = {},
+  title         = {Customised Shortest Paths Using a Distributed Reverse Oracle},
+  booktitle     = {Proceedings of the Eleventh International Symposium on Combinatorial Search, {SOCS}},
+  pages         = {},
+  publisher     = {},
+  year          = {2021},
+  url           = {https://ojs.aaai.org/index.php/SOCS/article/download/18554/18343},
+  timestamp     = {},
+  biburl        = {},
+  bibsource     = {}
 }
