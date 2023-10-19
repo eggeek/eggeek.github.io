@@ -25,4 +25,4 @@ Beyond research, I have also been involved in a diverse range of software projec
 
 - **[CV](assets/pdf/cv.pdf)**
 
-- **[Publications](/publications/)**
+- **[Full Publications](/publications/)**
